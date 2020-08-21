@@ -1,10 +1,9 @@
 import React from 'react';
 
 import "./Player.css"
-import { loginUrl } from './spotify'
-import Sidebar from './Sidebar';
-import Body from './Body';
-import Footer from './Footer';
+import Sidebar from '../Player/Body/Sidebar';
+import Body from '../Player/Body/Body';
+import Footer from '../Footer/Footer';
 
 function Player({spotify}) {
     return (

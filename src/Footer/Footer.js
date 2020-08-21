@@ -8,16 +8,16 @@ import RepeatIcon from "@material-ui/icons/Repeat";
 import PlaylistPlayIcon from "@material-ui/icons/PlaylistPlay";
 import VolumeDownIcon from "@material-ui/icons/VolumeDown";
 
-import { useDataLayerValue } from "./DataLayer";
+import { useDataLayerValue } from "../DataLayer";
 import "./Footer.css";
 
 function Footer({spotify}) {
-  const [{current_song},dispatch]=useDataLayerValue();
+  const [{current_song}]=useDataLayerValue();
   return (
     <div className="footer">
       <div className="footer__left">
         <img className="footer__albumlogo" 
-        src={current_song?current_song?.item?.album?.images[0].url:"__"} alt="" />
+        src={current_song?current_song?.item?.album?.images[0].url:"__h"} alt="" />
         <div className="footer__songInfo">
           <h4>{current_song?current_song?.item?.name:"No Currently played"}</h4>
             <p>{current_song?.item?.artists[0].name}</p>

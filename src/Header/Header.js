@@ -3,10 +3,10 @@ import SearchIcon from "@material-ui/icons/Search";
 import { Avatar } from "@material-ui/core";
 
 import "./Header.css";
-import { useDataLayerValue } from "./DataLayer";
+import { useDataLayerValue } from "../DataLayer";
 
 function Header({ spotify }) {
-  const [{ user }, dispatch] = useDataLayerValue();
+  const [{ user }] = useDataLayerValue();
   return (
     <div className="header">
       <div className="header__left">

@@ -4,9 +4,9 @@ import FavoriteIcon from "@material-ui/icons/Favorite";
 import MoreHorizIcon from "@material-ui/icons/MoreHoriz";
 
 import "./Body.css";
-import Header from "./Header";
+import Header from "../../Header/Header";
 import SongRow from "./SongRow";
-import { useDataLayerValue } from "./DataLayer";
+import { useDataLayerValue } from "../../DataLayer";
 
 function Body({ spotify }) {
   const [{ gym_workout }, dispatch] = useDataLayerValue();
